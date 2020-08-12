@@ -1,4 +1,4 @@
-# Simulated Annealing & DSP
+# TSP & Simulated Annealing
 
 # Import Packages and Files
 
