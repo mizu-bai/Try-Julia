@@ -2,7 +2,7 @@
 
 Try to Use Julialang in Mathematical Modeling
 
-## Algorithm
+## Algorithms
 
 * SA (TSP)
 * PSO
