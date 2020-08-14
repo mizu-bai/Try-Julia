@@ -73,6 +73,11 @@ for jj = 1: 2
 
             end
 
+        else
+
+            popnew[3] = 0
+            pop[kk, :] = popnew[1, :]
+
         end
 
         # Update v
