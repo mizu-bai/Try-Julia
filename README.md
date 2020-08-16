@@ -6,3 +6,4 @@ Try to Use Julialang in Mathematical Modeling
 
 * SA (TSP)
 * PSO
+* DE
