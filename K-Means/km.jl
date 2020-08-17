@@ -27,7 +27,7 @@ for ii = 1: N
 
     k = Int64(floor(rand() * K) + 1)
     data[ii, D + 1] = k
-    data[ii, 1: D] = randCenter[k, 1: 2] .+ randShifting[ii, 1: 2]
+    data[ii, 1: D] = randCenter[k, 1: D] .+ randShifting[ii, 1: D]
 
 end
 
@@ -51,7 +51,7 @@ for jj = 1: iter
 
         for mm = (D + 2): (D + K + 1)
 
-            data[kk, mm] = Distances.euclidean(data[kk, 1: 2], center[mm - D - 1, 1: 2])
+            data[kk, mm] = Distances.euclidean(data[kk, 1: D], center[mm - D - 1, 1: D])
 
         end
 
