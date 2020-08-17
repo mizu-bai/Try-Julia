@@ -33,13 +33,15 @@ end
 
 PyPlot.scatter(data[:, 1], data[:, 2])
 
-# Run
+# Simulate Artificial Selection after Observing Data Distribution
 
 centerDistributionMode = Distributions.Normal(0, 10)
 centerShifting = rand(centerDistributionMode, K, D)
 center = randCenter[:, 1: D] .+ centerShifting[:, 1: D]
 
 PyPlot.scatter(center[:, 1], center[:, 2])
+
+# Run
 
 iter = 100
 
